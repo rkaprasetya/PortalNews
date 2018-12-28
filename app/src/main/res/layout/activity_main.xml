@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:elevation="5dp"
+       android:id="@+id/app_bar_home"
+       android:background="@color/background"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+       <TextView
+           android:layout_marginTop="@dimen/app_bar_margin_top_bottom"
+           android:layout_marginStart="@dimen/app_bar_margin_start"
+           android:layout_marginBottom="@dimen/app_bar_margin_top_bottom"
+           android:text="News Sites"
+           android:layout_width="wrap_content"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="@dimen/app_bar_text_Size"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_home_title"
+           tools:ignore="HardcodedText,MissingPrefix"/>
+
+   </android.support.design.widget.AppBarLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/appbar_shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_home"
+        android:id="@+id/view"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/btn_wsj"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_wsj"
+                android:contentDescription="wsj"
+                android:background="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/btn_abcnews"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:src="@drawable/ic_abc"
+                app:layout_constraintVertical_bias="0.014" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/btn_bbc"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:src="@drawable/ic_bbc"
+                app:layout_constraintVertical_bias="0.014" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

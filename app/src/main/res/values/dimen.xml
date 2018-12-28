@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_button_right_text_Size">14sp</dimen>
+    <dimen name="app_bar_margin_top_bottom">15dp</dimen>
+    <dimen name="app_bar_margin_start">21dp</dimen>
+    <dimen name="app_bar_shadow_height">3dp</dimen>
+    <dimen name="app_bar_title_margin_start">21dp</dimen>
+    <dimen name="app_bar_icon">14dp</dimen>
+    <dimen name="app_bar_text_Size">18sp</dimen>
+    <dimen name="appbar_title_text_size">15sp</dimen>
+    <dimen name="widget_hover_margin_start_end">21dp</dimen>
+
+    <dimen name="item_iv_size">100dp</dimen>
+    <dimen name="item_margin_top_bottom">10dp</dimen>
+    <dimen name="item_title_size">12sp</dimen>
+    <dimen name="item_subtitle_size">10sp</dimen>
+    <dimen name="item_title_margin_start">5dp</dimen>
+</resources>

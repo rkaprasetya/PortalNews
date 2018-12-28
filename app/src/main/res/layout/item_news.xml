@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_news"
+        android:layout_width="@dimen/item_iv_size"
+        android:layout_height="@dimen/item_iv_size"
+        android:layout_marginBottom="@dimen/item_margin_top_bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/item_margin_top_bottom"
+        android:contentDescription="news logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_news"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/item_title_margin_start"
+        android:layout_marginTop="@dimen/item_margin_top_bottom"
+        android:text="Title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_news"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_title_margin_start"
+        android:text="Published date :"
+        android:textColor="@color/black_2"
+        android:textSize="@dimen/item_subtitle_size"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_news"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_title"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_item_date_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/item_subtitle_size"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_title"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Description"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/item_subtitle_size"
+        app:layout_constraintBottom_toBottomOf="@id/tv_more_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_news"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_news"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_date" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_description"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_more_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Tap for more detail"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/item_subtitle_size"
+        app:layout_constraintBottom_toTopOf="@+id/separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_description"
+        app:layout_constraintVertical_bias="0.142"
+        tools:ignore="HardcodedText" />
+</android.support.constraint.ConstraintLayout>
