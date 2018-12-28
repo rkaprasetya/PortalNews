@@ -1,13 +1,14 @@
 # PortalNews
 A portal news app that uses Kotlin, MVP and some libraries
-App name: Newstopia
-Min SDK vers : 19
-Programming Language : Kotlin
-Design Pattern : MVP
-Libraries used:
-	1. Retrofit
-	2. Rxjava
-	3. Picasso
+
+<br>App name: Newstopia
+<br>Min SDK vers : 19
+<br>Programming Language : Kotlin
+<br>Design Pattern : MVP
+<br>Libraries used:
+	<br>1. Retrofit
+	<br>2. Rxjava
+	<br>3. Picasso
   
   ![Image](https://github.com/rkaprasetya/PortalNews/blob/master/1.png)
   ![Image](https://github.com/rkaprasetya/PortalNews/blob/master/2.png)
